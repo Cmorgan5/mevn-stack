@@ -13,12 +13,12 @@ export default {
   components: {
     HelloWorld
   },
-  beforeCreate: function(index) {
-    fetch(this.$store.state.apiUrl + 'api/user', {
-      method: 'GET'
-    })
-    .then(res => res.text())
-    .then(text => console.log(text))
-  }
+  // beforeCreate: function(index) {
+  //   fetch(this.$store.state.apiUrl + 'api/user', {
+  //     method: 'GET'
+  //   })
+  //   .then(res => res.text())
+  //   .then(text => console.log(text))
+  // }
 }
 </script>

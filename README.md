@@ -1,8 +1,11 @@
-# mevn-stack
+# Task Manager App
 
-## Project setup
+# This App manages tasks using CRUD methods, built with Vue, Expess, Node, and MongoDB on EC2
+
+
+## Developemnt Server
 ```
-npm install
+npm run dev
 ```
 
 ### Compiles and hot-reloads for development

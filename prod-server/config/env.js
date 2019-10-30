@@ -33,7 +33,7 @@ function setDevEnv(app) {
 
 function setProdEnv(app) {
   process.env.NODE_ENV = 'production';
-  process.env.DB_URL = 'mongodb://localhost:27017/prod-db';
+  process.env.DB_URL = 'mongodb+srv://user:password1234@cluster0-yyz7j.mongodb.net/test';
   app.use(_bodyParser.default.json());
-  app.use(_express.default.static(__dirname + '/../dist'));
+  app.use(_express.default.static(__dirname + '/../../dist'));
 }

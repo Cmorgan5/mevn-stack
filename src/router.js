@@ -20,6 +20,7 @@ const routes = new Router ({
             component: Home
         },
         {
+            // No need for Navigation Guard as this is where we want to go anyway....
             path: '/login',
             name: 'login',
             component: Login
