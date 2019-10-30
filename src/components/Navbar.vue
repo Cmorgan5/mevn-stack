@@ -9,13 +9,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <router-link to="/" class="nav-link">
+            <li class="nav-item">
+                <router-link to="/" class="nav-link" exact>
                     Home
                 </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/tasks-all" class="nav-link">
+                <router-link to="/tasks" class="nav-link">
                     Tasks
                 </router-link>
             </li>
@@ -33,15 +33,15 @@
             </li>
 
             <li class="nav-item">
-                <router-link to="" class="nav-link">
+                <a class="nav-link" href="#">
                     Logout
-                </router-link>
+                </a>
             </li>
 
             <li class="nav-item">
-             <router-link to="" class="nav-link">
-                 Cory
-             </router-link>
+             <a class="nav-link" href="#">
+                 {{this.$store.state.username ? this.$store.state.username : 'User'}}
+                 </a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
