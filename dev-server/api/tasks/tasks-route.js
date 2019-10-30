@@ -1,6 +1,6 @@
 import express from 'express'
 
-const router   = express.Router();
+const router = express.Router();
 
 router.post('/task', (req, res) => {
     res.send('post.task - create a task')
@@ -17,3 +17,5 @@ router.put('/task', (req, res) => {
 router.delete('/task', (req, res) => {
     res.send('delete.task - Delete a task')
 });
+
+export default router;
