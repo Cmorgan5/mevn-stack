@@ -6,14 +6,15 @@
     "serve": "vue-cli-service serve",
     "build": "export NODE_ENV=production && babel dev-server --out-dir prod-server && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "concurrently \"export NODE_ENV=development\" \"babel dev-server --out-dir prod-server --watch\" \"nodemon prod-server/index.js\" \"npm run serve\" ",
-    "temp": "export NODE_ENV=development && nodemon prod-server/index.js"
+    "dev": "concurrently \"export NODE_ENV=development\" \"babel dev-server --out-dir prod-server --watch\" \"nodemon prod-server/index.js\" \"npm run serve\" "
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.4",
     "core-js": "^3.3.2",
     "jquery": "^3.4.1",
+    "mongoose": "^5.7.7",
     "popper.js": "^1.16.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
